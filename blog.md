@@ -49,8 +49,8 @@ The last important component is the dependencies I used for this example. They a
 That it folks, creating a Jersey client that supports `https` is doable when you know how to do it.
 
 ## Acknowledgements
-
-I would like to thank Malin Ekholm and Aslak Hellesøy for feedback.
+                                ]
+I would like to thank Malin Ekholm for feedback.
 
 ## Resources
 
