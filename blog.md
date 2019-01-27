@@ -1,8 +1,6 @@
 # A Jersey client supporting `https`
 
-When testing a rest service behind `https`, you must be able to create a client that support `https`.
-
-It would be nice if it was easy. When you know how to do it, it isn't too hard.
+When testing a rest service behind `https`, you must be able to create a client that supports an encrypted connection.
 
 The trick is to create a `javax.ws.rs.client.Client` and set the `sslContext` as well as 
 the `hostnameVerifier()` properly.
@@ -15,7 +13,7 @@ The factory below creates a Jersey client.
 
 ## A `TrustManager` that thinks that the world is trustworthy 
 
-The first you need is a `TrustManager` that thrust everything. My implementation looks like this:
+The first you need is a `TrustManager` that trusts everything. My implementation looks like this:
 
 {% include src/test/java/se/thinkcode/NoOpTrustManager.java %}
 
@@ -46,10 +44,10 @@ The last important component is the dependencies I used for this example. They a
 
 ## Conclusion
 
-That it folks, creating a Jersey client that supports `https` is doable when you know how to do it.
+That it folks, a Jersey client that supports `https`.
 
 ## Acknowledgements
-                                ]
+                                
 I would like to thank Malin Ekholm for feedback.
 
 ## Resources
